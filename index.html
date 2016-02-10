@@ -1,1 +1,157 @@
-Map My Summer Home Page
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="my.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='viewport' content='initial-scale=6,maximum-scale=10,user-scalable=yes' />
+        
+    <script src="tabletop.js"></script>
+    
+    
+    <meta charset=utf-8 />
+    <title>Map My Summer</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+
+    <div data-role="page" id="pageOne">
+        <div data-role="header" id="menu">
+            <div data-role="main" class="ui-content" align="left">
+                 <center><text id=title ><img src = "http:i57.tinypic.com/2yzarex.png"> </text></center>
+                  </div>
+        </div>
+    
+    
+    
+    
+            <!--Javascript Below-->
+
+        <body bgcolor = "#ECECEA">
+            
+            <br><br>
+<center><p  style="font-family: Trebuchet MS">Select a program type and a cost to see what matches your needs</p></center>
+    <div id="FilterBox">
+   
+        <nav id='filters' class='filter-ui'>
+            
+        <div id="list1" class="dropdown-check-list" tabindex="100">
+            
+        <span class="anchor">Select Program Type</span>
+        <ul class="items">
+            <li><input type = "checkbox" id = "musicBox" onClick="spreadSheet()"/>&nbsp Music</li>
+   
+           <li><input type = "checkbox" id = "college" onClick = "spreadSheet()"/>&nbsp Educational</li>
+    
+            <li><input type = "checkbox" id = "city" onClick="spreadSheet()"/>&nbsp Computer Science</li>
+    
+            <li><input type = "checkbox" id = "science" onClick = "spreadSheet()"/>&nbsp Science</li>
+            <li><input type = "checkbox" id = "business" onClick = "spreadSheet()"/>&nbsp Business</li>
+        </ul>
+    </div>
+    
+    <div id="list2" class="dropdown-check-list" tabindex="100">
+        <span class="anchor"> Select Cost</span>
+        <ul class="items">
+            <li><input type = "checkbox" id = "0" onClick = "spreadSheet()"/>&nbsp $0 - $500</li>
+            <li><input type = "checkbox" id = "500" onClick = "spreadSheet()"/>&nbsp $500 - $1000</li>
+            <li><input type = "checkbox" id = "1000" onClick = "spreadSheet()"/>&nbsp $1000+</li>
+        </ul> 
+    </div> 
+            
+    <div id = "list3" class = "dropdown-check-list" tabindex="100">
+        <span class = "anchor">Select Eligibility </span>
+        <ul class = "items">
+            <li><input type = "checkbox" id = "minorities" onClick = "spreadSheet()" checked/>Minorities</li>
+            <li><input type = "checkbox" id = "girls" onClick = "spreadSheet()" checked/>Girls</li>
+            <li><input type = "checkbox" id = "boys" onClick = "spreadSheet()" checked/>Boys</li>
+        </ul>
+             
+    </div>
+            
+    <div id = "list4" class = "dropdown-check-list" tabindex = "100">
+             <span class = "anchor"> Select State </span>
+             <ul class = "items">
+                 <li><input type = "checkbox" id = "WA" onClick = "State()"/>Washington</li>
+                 <li><input type = "checkbox" id = "OR" onClick = "State()"/>Oregon</li>
+                 <li><input type = "checkbox" id = "CA" onClick = "State()"/>California</li>
+             </ul>
+    </div>
+             
+             
+        
+<script type="text/javascript">
+        
+        var checkList = document.getElementById('list1');
+        checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+            if (checkList.classList.contains('visible')){
+                checkList.classList.remove('visible');
+            } else{
+                checkList.classList.add('visible');
+            }
+        }
+
+        checkList.onf = function(evt) {
+            checkList.classList.remove('visible');
+        }
+    
+        var checkList2 = document.getElementById('list2');
+        checkList2.getElementsByClassName('anchor')[0].onclick = function(evt) {
+            if (checkList2.classList.contains('visible')){
+                checkList2.classList.remove('visible');
+                console.log("works till here");
+            }else{
+                checkList2.classList.add('visible');
+            }
+        }
+
+        checkList2.onf = function(evt) {
+            checkList2.classList.remove('visible');
+        }
+        
+        var checkList3 = document.getElementById('list3');
+        
+        checkList3.getElementsByClassName('anchor')[0].onclick = function(evt) {
+            if (checkList3.classList.contains('visible')){
+                checkList3.classList.remove('visible');
+            } else {
+                checkList3.classList.add('visible');
+            
+            }
+        }
+
+        checkList3.onf = function(evt) {
+            checkList3.classList.remove('visible');
+        }
+        
+        var checkList4 = document.getElementById('list4');
+        checkList4.getElementsByClassName('anchor')[0].onclick = function(evt) {
+            if (checkList4.classList.contains('visible')){
+                checkList4.classList.remove('visible');
+            } else {
+                checkList4.classList.add('visible');
+            }
+        }
+
+        checkList4.onf = function(evt) {
+            checkList4.classList.remove('visible');
+        }
+        
+        </script></nav>
+        </div>
+          
+        <br>
+    
+        <br>
+    <center><div class='custom-popup' id='map'></center>
+    <left><div id = 'program'><p style="font-family: Arial Black">Have a program that you want to add?</p></left>
+<a href="https://alisonr.typeform.com/to/fcaMDB" class='ui-button2' style = "color: #FBFEFD"><center>+</center></a>
+    
+    <script src="ourjava.js">
+L.mapbox.accessToken = 'pk.eyJ1IjoiamVmZnN0ZXJuIiwiYSI6IlAzRFFiN0EifQ.mNWvayrLEw9wULuq0sopyA';
+var map = L.mapbox.map('map', 'mapbox.street');
+    map.featureLayer.on('click', function(e)) {    
+    map.panTo(e.layer.getLatLng());
+    }                          
+</script>
+
+</head>
+</html>
