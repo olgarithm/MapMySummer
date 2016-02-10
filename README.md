@@ -1,0 +1,2 @@
+# MapMySummer
+This is a website that is designed specifically for high school students looking for summer programs. The programs are categorized by cost, location, subject, and gender, giving people an easy way to find one that fit them perfectly. By specifically allowing girls to find girl-only programs (like Girls Who Code) they could become more acquainted with the idea that they truly belong in STEM fields, or any other field that they set their hearts to.
