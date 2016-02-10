@@ -17,12 +17,14 @@
   border:3px solid rgba(0,0,0,0.4);
   border-radius:3px;
   text-decoration: none;
-  }
-  .ui-button:hover {
+}
+  
+.ui-button:hover {
     background:#5EC9AB;
     color:#FBFEFD;
     text-shadow: none;
  }
+
 .ui-button2 {
   background:#62C8AB;
   text-shadow:
@@ -34,7 +36,7 @@
   display:block;
   position:absolute;
   font-size: 380%;
-  top:110%;right:5%;
+  top:115%;right:5%;
   width:70px;
   height:70px;
   margin:-20px 0 0 -80px;
@@ -65,7 +67,7 @@
     top:0%;
     z-index:2;
     position:relative;
-    margin-top: 120px;
+    margin-top: 150px;
     margin-bottom: 10px;
     height: 650px; 
     width:800px; 
@@ -80,9 +82,9 @@ text{
 
 #program{
     margin-left: 85%;
-    position: center;
-    
+    position:center;
 }
+
 #title{
     color: #CDEEE2;
     font-size: x-large;
@@ -128,12 +130,12 @@ text{
 }
 .filter-ui {
   position:absolute;
-  top:310px;
-  right:300px;
+  top:270px;
+  right:270px;
   z-index:100;
   padding:10px;
   border-radius:3px;
-  }
+}
 
 .dropdown-check-list {
     background: white;
@@ -143,7 +145,7 @@ text{
   position: relative;
   cursor: pointer;
   display: inline-block;
-  padding: 5px 50px 5px 10px;
+  padding: 5px 55px 5px 10px;
   border: 1px solid #ccc;
 }
 .dropdown-check-list .anchor:after {
