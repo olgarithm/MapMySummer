@@ -7,10 +7,10 @@
     1px 1px 0 #D1DDF0;  
   color:#FBFEFD;
   display:block;
-  position: absolute;
-  width: 60%;
   float: right;
-  margin:50% 0 0 -80%;
+   top:90%;left:50%;
+   width:160px;
+   margin:-20px 0 0 -80px;
   z-index:2;
   text-align:center;
   padding:10px;
@@ -36,7 +36,7 @@
   display:block;
   position:absolute;
   font-size: 380%;
-  top:15%;right:5%;
+  top:65%;right:5%;
   width:70px;
   height:70px;
   margin:-20px 0 0 -80px;
