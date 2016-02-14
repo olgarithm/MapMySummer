@@ -130,8 +130,8 @@ text{
 }
 .filter-ui {
   position:absolute;
-  top:270px;
-  right:270px;
+  top:30%;
+  right:50%;
   z-index:100;
   padding:10px;
   border-radius:3px;
